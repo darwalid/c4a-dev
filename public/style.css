@@ -1,0 +1,150 @@
+
+/* =============
+ table of contents
+===============
+ 
+0. global styles
+1. ul class .flex
+   1.1 sub html+css+javascript
+
+ 
+*/
+ 
+ 
+ 
+ 
+/* ===============
+   1. global style
+================ */
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+    
+}
+html {box-sizing: border-box;
+    background-color: #f2f2f2;
+} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
+
+
+h1{
+    font-size: 25px;
+    display: flex; 
+    align-items: center;
+    width: 50%;
+}
+
+/* ==============================
+   2. ul class .flex
+=============================== */
+.hide-when-mobile{
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    width: 100%;
+    
+}
+.container {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+.main-list{
+    position: relative;
+    align-items: center;
+   display: flex;
+   justify-content: center;
+   
+}
+.main-link{
+    padding: 5px 15px;
+    display: flex;
+    
+}
+
+.main-link:hover{
+    
+    color: cyan;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 5px;
+}
+/* ===========================/===
+   1.1 sub html + css + javascript
+=============================== */
+.sub-ul{
+    display: none;
+    position: absolute;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    font-size: 15px;
+    border-top: 2px solid cyan;
+    padding: 5px;
+    width: 150px;
+   top:100%;
+}
+    
+    
+
+.main-list:hover .sub-ul{
+   display: block;
+}
+.sub-ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(9, 9, 9);
+    
+}
+.sub-ul li a:hover{
+    color: cyan;
+    font-weight: bold;
+}
+
+.sub-sub-ul{
+    background-color: #1b1b1b;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+    width: 80%;
+    border-radius: 5px;
+    display: none;
+}
+.meni-project:hover .sub-sub-ul{
+    display: block;
+ }
+ 
+.show-when-mobile{
+    display: none;
+    
+}
+main{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    height: calc(100vh - 131px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    
+    
+    padding: 20px 0;
+    background-color: #1b1b1b;
+    font-size: 18px;
+    text-align: center;
+}

@@ -1,0 +1,99 @@
+/*************************
+1.animation of big screen
+*************************/
+.hide-when-mobile{
+    animation: down 2s 1;
+
+}
+@keyframes down{
+    0%{
+       transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+}
+h1{
+    animation: lftr 2s 1;
+}
+@keyframes lftr{
+
+    0%{
+        transform: translateX(-100px);
+     }
+     50%{
+        transform: translateX(100px);
+     }
+     70%{
+        transform: translateX(-50px);
+     }
+     100%{
+         transform: translateX(0);
+ 
+     }
+}
+.sub-ul, .sub-sub-ul{
+    animation: hoverr 2s 1;
+}
+
+@keyframes hoverr{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*************************
+1.animation of mobile
+*************************/
+.main-div{
+    animation: move 2s 1;
+}
+@keyframes move{
+    0%{
+        transform: translateX(50px);
+      
+    }
+    50%{
+        transform: translateX(-50px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.sub-div{
+    animation: move 2s 1;
+}
+@keyframes move{
+    0%{
+        transform: translateX(50px);
+      
+    }
+    50%{
+        transform: translateX(-50px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.sub-sub-div{
+    animation: move 2s 1;
+}
+@keyframes move{
+    0%{
+        transform: translateX(50px);
+      
+    }
+    50%{
+        transform: translateX(-50px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

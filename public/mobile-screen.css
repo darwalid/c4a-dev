@@ -1,0 +1,121 @@
+.show-when-mobile{
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    width: 100%;
+    
+    
+}
+.hide-when-mobile{
+    display: none;
+}
+
+h1{
+    position: absolute;
+    padding: 3%;
+    width: 50%;
+    left: 10%;
+}
+/******************************
+ 1.font awsome humborger menu
+********************************/
+.absolut{
+    position: absolute;
+    top: 2px;
+    right: 40px;
+    
+}
+.fa-solid{
+    transform: scale(2, 1.5);
+
+    
+}
+.fa-plus{
+    position: absolute;
+    right: 8vw;
+}
+input{
+    display: none;
+}
+ #humborger:checked + .show-on-click{
+    display: block;
+
+}
+
+/******************************
+ 2. show on click
+********************************/
+.show-on-click{
+    background-color: #1b1b1b;
+    border-top: 2px solid black;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    
+
+}
+#humborger:checked + .show-on-click{
+    display: block;
+}
+
+
+.main-div{
+    width: 100%;
+
+}
+label{
+    font-size: 22px;
+   
+    display: block;
+    padding: 20px;
+}
+label:hover,
+.fa-bars:hover,
+.sub-div li a:hover,
+label:hover .fas
+
+{
+    color: cyan;
+    letter-spacing: 2px;
+}
+/*********************
+     3. sub-div
+********************/
+.sub-div{
+    display: none;
+    
+}
+
+#html:checked + .sub-div, 
+#css:checked + .sub-div, 
+#js:checked + .sub-div 
+{
+    display: block;
+}
+.main-div li{
+    font-size: 17px;
+    padding: 10px 0 10px 40px;
+}
+.sub-div li a{
+    display: block;
+}
+/*********************
+     3. sub-sub-div
+********************/
+
+.sub-sub-div{
+    display: none;
+}
+#min:checked + .sub-sub-div{
+    display: block;
+}
+.min-project{
+    padding: 0;
+    font-size: 17px;
+}
+.main-div{
+    border-bottom: 2px solid black;
+}
